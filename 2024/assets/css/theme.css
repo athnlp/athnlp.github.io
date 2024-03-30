@@ -9307,6 +9307,7 @@ textarea.form-control-lg {
 }
 
 .rounded-3 {
+  box-shadow: 2px 2px 5px 5px #E0E0E0;		
   border-radius: 0.625rem !important;
 }
 
