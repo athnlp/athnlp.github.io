@@ -39,11 +39,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
 	<style>
-		.read_more  {
+		.read_more{
 			display: none;
 		}
 
-		.show {
+		.show{
 			display: block!important;
 		}
 		
@@ -56,7 +56,16 @@
 
 
   <body>
-
+	<script>
+		function toggleText(id) {			
+			var x = document.getElementById(id);
+			  if (x.innerHTML === "Read More") {
+				x.innerHTML = "Read Less";
+			  } else {
+				x.innerHTML = "Read More";
+			  }
+			}
+</script>
 	<div class="sticky-top navbar-elixir">
       <div class="container">
         <nav class="navbar navbar-expand-lg"> <a class="navbar-brand" href="index.html"><img src="assets/img/logo-dark.png" alt="logo" /></a>
@@ -130,7 +139,7 @@
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Antonios Anastasopoulos is an Assistant Professor in Computer Science at George Mason University. He received his PhD in Computer Science from the University of Notre Dame and then did a postdoc at Languages Technologies Institute at Carnegie Mellon University.<span class="collapse" id="collapseExample1"> His research is on natural language processing with a focus on low-resource settings, endangered languages, and cross-lingual learning, and is currently funded by the National Science Foundation, the National Endowment for the Humanities, the DoD, Google, Amazon, Microsoft, and Meta.</span></p>
 						
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle1')" class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle1">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -149,7 +158,7 @@
 							Presentation title: Multimodal NLP</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Raquel Fernández is Professor of Computational Linguistics and Dialogue Systems at the Institute for Logic, Language & Computation, University of Amsterdam, where she leads the Dialogue Modelling Group. <span class="collapse" id="collapseExample2">Raquel received her PhD from King's College London and, before moving to Amsterdam, held research positions at the University of Potsdam and Stanford University. Her research focuses on how language use is shaped by perception and social interaction. How are language and vision connected? What coordination strategies help us to communicate successfully with our dialogue partners? And how can answers to these questions lead to better NLP systems? Her group carries out research on these and related topics from an interdisciplinary perspective, at the interface of computational linguistics, cognitive science, and artificial intelligence.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle2')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle2">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -166,7 +175,7 @@
 							Presentation title: Causality</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Ferenc Huszár is Associate Professor of Machine Learning at Cambridge University. His research focusses on the theory of deep learning: understanding and explaining the success of gradient-based training of deep neural networks. <span class="collapse" id="collapseExample3">Prior to joining Cambridge, Ferenc spent time as an industry researcher: as principal research scientist of Magic Pony Technology, a deep learning startup focussed on video processing, and later at Twitter, contributing to a range of projects in computer vision, recommender systems, NLP and the societal impacts of ML algorithms.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle3')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle3">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -183,7 +192,7 @@
 							Presentation title: Health NLP</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Martin Krallinger is currently leading the NLP for Biomedical Information Analysis (NLP4BIA) Unit at the Barcelona Supercomputing Center.<span class="collapse" id="collapseExample4"> He has been working in biomedical NLP over 15 years, publishing over 90 papers on topics covering applied biomedical NLP/text mining, named entity recognition & linking, relation extraction, biomedical ontologies and annotation tools. He worked on text mining solutions for a variety of applications, including cardiology, rheumatology, toxicology, precision medicine, oncology or biomaterials. Moreover, Martin was involved in the organization of over fifteen evaluation and benchmarking shared tasks including BioCreative, eHealth CLEF, BioASQ, SMM4H, IberLEF or biomedical WMT.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle4')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle4">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -201,7 +210,7 @@
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Mirella Lapata is professor of natural language processing in the School of Informatics at the University of Edinburgh. <span class="collapse" id="collapseExample5">Her research focuses on getting computers to understand, reason with, and generate natural language. She is the first recipient (2009) of the British Computer Society and Information Retrieval Specialist Group (BCS/IRSG) Karen Sparck Jones award and a Fellow of the Royal Society of Edinburgh, the ACL, and Academia Europaea.
 Mirella has also received best paper awards in leading NLP conferences and has served on the editorial boards of the Journal of Artificial Intelligence Research, the Transactions of the ACL, and Computational Linguistics. She was president of SIGDAT (the group that organizes EMNLP) in 2018. She has been awarded an ERC consolidator grant, a Royal Society Wolfson Research Merit Award, and a UKRI Turing AI World-Leading Researcher Fellowship.</p></span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle5')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle5">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -218,7 +227,7 @@ Mirella has also received best paper awards in leading NLP conferences and has s
 							Presentation title: Classification</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Ryan McDonald is the Chief Scientist at ASAPP working on NLP and ML research focusing on CX and enterprise. <span class="collapse" id="collapseExample6">HRyan was a Research Scientist in the Language Team at Google for 15 years where he helped build state-of-the-art NLP and ML technologies and pushed them to production. Before that he received his PhD from the University of Pennsylvania focusing on multilingual syntax. In 2023 his work on Universal Dependencies received the ACL 10 year test-of-time award.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle6')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle6">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -236,7 +245,7 @@ Mirella has also received best paper awards in leading NLP conferences and has s
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Aida Nematzadeh is a staff research scientist at DeepMind. Her research interests are in the intersection of computational linguistics, cognitive science, and machine learning. 
 					<span class="collapse" id="collapseExample7">Her recent work has focused on multimodal learning and evaluation and analysis of neural representations. Before joining DeepMind, she was a postdoctoral researcher at UC Berkeley. She received a PhD and an MSc in Computer Science from the University of Toronto.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle7')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle7">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -253,7 +262,7 @@ Mirella has also received best paper awards in leading NLP conferences and has s
 							Presentation title: Structured (Sequence) Prediction</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'>Vlad Niculae is an assistant professor at the Language Technology Lab, University of Amsterdam. <span class="collapse" id="collapseExample8">His research focuses on machine learning for natural language processing, specifically focusing on keywords like structure, sparsity, geometry, and optimization. Vlad was previously a post-doc in the Sardine lab in Lisbon, and obtained a PhD from Cornell advised by Claire Cardie.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle8')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle8">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -270,7 +279,7 @@ Mirella has also received best paper awards in leading NLP conferences and has s
 							Presentation title: Encoder-Decoder architectures</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'><p>Barbara Plank is Professor for AI and Computational Linguistics at LMU Munich where she heads the MainNLP lab, co-director of the Center for Information and Language Processing (CIS), and part-time professor at IT University of Copenhagen.<span class="collapse" id="collapseExample9"> She received her PhD in 2011 from the University of Groningen Currently, she holds an ERC Consolidator Grant, is ELLIS Scholar and VP-Elect for the Association for Computational Linguistics (ACL).</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle9')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle9">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
@@ -287,7 +296,7 @@ Mirella has also received best paper awards in leading NLP conferences and has s
 							Presentation title: LLMs factuality</p>
 					<p class="py-3 mb-0" data-zanim-xs='{"delay":0.2}'><p>Anna Rogers is an Associate Professor in the Computer Science Department at the IT University of Copenhagen. Her main research area is Natural Language Processing, in particular analysis and evaluation of pre-trained language models. <span class="collapse" id="collapseExample10">She is currently an editor-in-chief of ACL Rolling Review, the peer review platform used by major NLP conferences.</span></p>
 						 <div class="overflow-hidden">
-							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample">Read More
+							<div class="d-inline-block" data-zanim-xs='{"delay":0.3}'><a onclick="toggleText('toggle10')"  class="d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample"><span id="toggle10">Read More</span>
 								<div class="overflow-hidden ms-2" data-zanim-xs='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'><span class="d-inline-block fw-medium">&xrarr;</span></div>
 							  </a></div>
 						  </div>
