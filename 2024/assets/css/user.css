@@ -3,3 +3,7 @@
 .mymenu{
 	font-size:13px!important;
 }
+
+.mybg-holder{
+	background-size:contain!important
+}
