@@ -11,3 +11,14 @@
 .min-vh-80{
 	min-height:80vh !important
 }
+
+.h-80{
+	height: 80%!important;
+}
+
+  @media (min-width: 992px) { /* Large screens (lg and up) */
+    .col-custom-5 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
