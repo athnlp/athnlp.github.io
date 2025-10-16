@@ -1,0 +1,85 @@
+/* prettier-ignore */
+/*# sourceMappingURL=user.css.map */
+.mymenu{
+	font-size:13px!important;
+}
+
+.mybg-holder{
+	background-size:contain!important
+}
+
+.min-vh-80{
+	min-height:80vh !important
+}
+
+.h-80{
+	height: 80%!important;
+}
+
+  @media (min-width: 992px) { /* Large screens (lg and up) */
+    .col-custom-5 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+  }
+
+
+  .carousel-item > .row {
+    display: flex;
+  }
+  .gallery-img {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Lightbox navigation buttons (edge aligned) */
+  .lightbox-nav-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    z-index: 1056;
+    transition: background 0.3s;
+  }
+  .lightbox-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  #prevBtn {
+    left: 0;
+    border-radius: 0;
+  }
+  #nextBtn {
+    right: 0;
+    border-radius: 0;
+  }
+/* Carousel Controls at edges */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 20%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.05);
+  transition: background 0.3s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  filter: invert(1);
+}
+
