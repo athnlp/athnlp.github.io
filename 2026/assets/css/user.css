@@ -83,3 +83,7 @@
   filter: invert(1);
 }
 
+.sponsor-logo {
+    max-height: 120px;
+    width: auto;
+}
