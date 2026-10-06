@@ -10,7 +10,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-	<title>Athens Natural Language Processing Summer School 2025</title>
+	<title>Athens Natural Language Processing Summer School 2026</title>
 
 
     <!-- ===============================================-->
@@ -138,17 +138,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script>
          // Match only DSC_*.jpg files
-          const imageCount = 80; // Change this to however many images you have
+          const imageCount = 56; // Change this to however many images you have
           const images = [];
 
           for (let i = 1; i <= imageCount; i++) {
-              const fileNumber = String(i).padStart(3, '0'); // e.g., 001, 002, ...
+              const fileNumber = String(i).padStart(4, '0'); // e.g., 001, 002, ...
               const filename = `DSC_${fileNumber}.jpg`;
-              const path = `assets/img/gallery/gallery_photos/${filename}`;
+              const path = `assets/img/gallery/${filename}`;
               images.push({ thumb: path, full: path });
           }
-
-          console.log(images);
 
 
         const imagesPerSlide = 4;
